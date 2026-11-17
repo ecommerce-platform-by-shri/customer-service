@@ -23,5 +23,13 @@ pipeline {
                 }
             }
         }
+
+        stage('Push to docker hub'){
+            steps{
+                script{
+                    dockerPush('customer-service','latest','UsernameAndPassword')
+                }
+            }
+        }
     }
 }
