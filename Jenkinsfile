@@ -31,5 +31,11 @@ pipeline {
                 }
             }
         }
+
+        stage('Done'){
+            steps{
+                echo "All done"
+            }
+        }
     }
 }
