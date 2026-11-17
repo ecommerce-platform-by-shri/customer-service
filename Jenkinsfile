@@ -16,5 +16,12 @@ pipeline {
                 }
             }
         }
+        stage("Build"){
+            steps{
+                script{
+                    build('Customer-Service')
+                }
+            }
+        }
     }
 }
